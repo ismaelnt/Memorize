@@ -12,6 +12,7 @@
 		F784065D2A275E2C00140637 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F784065C2A275E2C00140637 /* Assets.xcassets */; };
 		F78406602A275E2C00140637 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F784065F2A275E2C00140637 /* Preview Assets.xcassets */; };
 		F7D766602A2911ED00E82305 /* MemorizeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D7665F2A2911ED00E82305 /* MemorizeModel.swift */; };
+		F7D766622A2916AA00E82305 /* MemorizeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D766612A2916AA00E82305 /* MemorizeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		F784065C2A275E2C00140637 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F784065F2A275E2C00140637 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F7D7665F2A2911ED00E82305 /* MemorizeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemorizeModel.swift; sourceTree = "<group>"; };
+		F7D766612A2916AA00E82305 /* MemorizeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemorizeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				F78406582A275E2B00140637 /* MemorizeApp.swift */,
 				F7D7665F2A2911ED00E82305 /* MemorizeModel.swift */,
 				F784065A2A275E2B00140637 /* MemorizeView.swift */,
+				F7D766612A2916AA00E82305 /* MemorizeViewModel.swift */,
 				F784065C2A275E2C00140637 /* Assets.xcassets */,
 				F784065E2A275E2C00140637 /* Preview Content */,
 			);
@@ -142,6 +145,7 @@
 			files = (
 				F784065B2A275E2B00140637 /* MemorizeView.swift in Sources */,
 				F7D766602A2911ED00E82305 /* MemorizeModel.swift in Sources */,
+				F7D766622A2916AA00E82305 /* MemorizeViewModel.swift in Sources */,
 				F78406592A275E2B00140637 /* MemorizeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

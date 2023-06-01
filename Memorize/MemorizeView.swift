@@ -1,10 +1,14 @@
 import SwiftUI
 
 struct MemorizeView: View {
+    var viewModel: MemorizeViewModel
+    
     var body: some View {
         HStack {
-            ForEach(0..<4) { index in
-                CardView(isFaceUp: false)
+            ForEach(viewModel.cards) { card in
+                CardView(card: card).onTapGesture {
+                    viewModel.choose(card: card)
+                }
             }
         }
         .foregroundColor(Color.orange)
@@ -14,14 +18,13 @@ struct MemorizeView: View {
 }
 
 struct CardView: View {
-    var isFaceUp: Bool
-    
+    var card: MemorizeModel<String>.Card
     var body: some View {
         ZStack {
-            if isFaceUp {
+            if card.isFaceUp {
                 RoundedRectangle(cornerRadius: 10.0).fill(Color.white)
                 RoundedRectangle(cornerRadius: 10.0).stroke(lineWidth: 3)
-                Text("👻")
+                Text(card.content)
             } else {
                 RoundedRectangle(cornerRadius: 10.0).fill()
             }
@@ -31,6 +34,7 @@ struct CardView: View {
 
 struct MemorizeView_Previews: PreviewProvider {
     static var previews: some View {
-        MemorizeView()
+        let viewModel = MemorizeViewModel()
+        MemorizeView(viewModel: viewModel)
     }
 }
