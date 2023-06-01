@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct ContentView: View {
+struct MemorizeView: View {
     var body: some View {
         HStack {
             ForEach(0..<4) { index in
@@ -29,8 +29,8 @@ struct CardView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct MemorizeView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        MemorizeView()
     }
 }
